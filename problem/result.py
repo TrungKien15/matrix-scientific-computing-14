@@ -17,6 +17,7 @@ def result(scene):
         """).shift(LEFT*4)
     
     P = MathTex(r"""
+        =
         \begin{bmatrix}
         1 & 0 & 0 \\
         0 & 1 & 1 \\
@@ -25,7 +26,6 @@ def result(scene):
         """).next_to(A)
 
     D = MathTex(r"""
-        = 
         \begin{bmatrix}
         2 & 0 & 0 \\
         0 & 2 & 0 \\
