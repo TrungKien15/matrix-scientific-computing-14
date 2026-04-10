@@ -10,6 +10,7 @@ from SVD.theory import svd_theory
 from SVD.proof import svd_proof
 from SVD.example import svd_example
 from SVD.geometry import svd_geometry
+from SVD.application import svd_application
 
 class SVD(Scene):
     def intro(self):
@@ -24,13 +25,16 @@ class SVD(Scene):
     def construct(self):
         
         self.intro()
+        
         problem(self)
         step1(self)
         step2(self)
         step3(self)
         step4(self)
         result(self)
+        
         svd_theory(self)
         svd_proof(self)
         svd_example(self)
         svd_geometry(self)
+        svd_application(self)
