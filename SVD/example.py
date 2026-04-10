@@ -119,6 +119,7 @@ def svd_example(scene):
     ).next_to(v_line, RIGHT)
 
     scene.play(Write(eq_vec))
+    scene.wait(2)
 
     # =========================================================
     # STEP 2
@@ -142,9 +143,9 @@ def svd_example(scene):
     scene.play(Write(eq_V))
     scene.wait(1)
     scene.play(Write(text_sigma))
+    scene.wait(1)
     scene.play(Write(eq_Sigma))
     scene.wait(2)
-
     scene.play(
         FadeOut(text_sigma),
         FadeOut(eq_V),
@@ -194,7 +195,7 @@ def svd_example(scene):
     scene.wait(2)
 
     # =========================================================
-    # FINAL: Kết quả A = U \Sigma V^T
+    # FINAL
     # =========================================================
     scene.clear()
     scene.add(title)
@@ -221,3 +222,4 @@ def svd_example(scene):
     final_box = SurroundingRectangle(eq_final, color=RED, buff=0.2)
     scene.play(Create(final_box))
     scene.wait(4)
+    scene.clear()

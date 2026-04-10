@@ -9,7 +9,7 @@ def step3(scene):
     scene.play(title.animate.to_edge(UP + LEFT))
 
     text1 = MathTex(r"""
-        D =
+        P =
         \begin{bmatrix}
         v_1 & v_2 & v_3
         \end{bmatrix}
@@ -21,8 +21,8 @@ def step3(scene):
         = 
         \begin{bmatrix}
         1 & 0 & 0 \\
-        0 & 1 & -1 \\
-        0 & 1 & 1
+        0 & 1 & 1 \\
+        0 & -1 & 1
         \end{bmatrix}
         """).next_to(text1, RIGHT)
     scene.play(FadeIn(text2, shift=UP))

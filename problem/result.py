@@ -15,21 +15,21 @@ def result(scene):
         0 & 1 & 3
         \end{bmatrix}
         """).shift(LEFT*4)
-
+    
     P = MathTex(r"""
+        \begin{bmatrix}
+        1 & 0 & 0 \\
+        0 & 1 & 1 \\
+        0 & -1 & 1
+        \end{bmatrix}
+        """).next_to(A)
+
+    D = MathTex(r"""
         = 
         \begin{bmatrix}
         2 & 0 & 0 \\
         0 & 2 & 0 \\
         0 & 0 & 4
-        \end{bmatrix}
-        """).next_to(A)
-    
-    D = MathTex(r"""
-        \begin{bmatrix}
-        1 & 0 & 0 \\
-        0 & 1 & 1 \\
-        0 & -1 & 1
         \end{bmatrix}
         """).next_to(P)
     

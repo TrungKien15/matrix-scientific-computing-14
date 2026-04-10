@@ -143,7 +143,7 @@ def svd_geometry(scene):
     
     scene.play(FadeOut(trace_v1), FadeOut(trace_v2), run_time=1)
     
-    scene.play(VGroup(final_formula, box_final).animate.scale(2).to_edge(DOWN))
+    scene.play(VGroup(final_formula, box_final).animate.scale(1.75).to_edge(DOWN))
     
-    scene.wait(6)
+    scene.wait(4)
     scene.clear()

@@ -50,7 +50,6 @@ def svd_proof(scene):
     
     scene.clear()
     scene.add(main_title, step1_title, derivation_square_matrix[-2], derivation_symmetric_matrix[-2])
-    scene.wait()
 
     scene.play(
         derivation_square_matrix[-2].animate.to_edge(LEFT).shift(RIGHT), 
@@ -59,7 +58,8 @@ def svd_proof(scene):
     derivation_square_matrix[-1].next_to(derivation_square_matrix[-2]).shift(RIGHT)
     derivation_symmetric_matrix[-1].next_to(derivation_symmetric_matrix[-2]).align_to(derivation_square_matrix[-1], LEFT)
     scene.play(Write(derivation_square_matrix[-1]), Write(derivation_symmetric_matrix[-1]))
-    
+    scene.wait()
+
     note_eigenvector = Tex(r"$v_i$ is eigenvector corresponding to eigenvalue $\lambda_i$", font_size=32).to_edge(DOWN).shift(UP) 
     
     eq_orthogonality = MathTex(r"v_{i}^{T} v_{j} = 0")
@@ -86,6 +86,7 @@ def svd_proof(scene):
 
     scene.play(Write(eq_dot_product_proof[0]))
     scene.play(TransformMatchingTex(eq_dot_product_proof[0], eq_dot_product_proof[1]))
+    scene.wait()
 
     part_At_A_vj = eq_dot_product_proof[1][4:]
     scene.play(
@@ -145,8 +146,11 @@ def svd_proof(scene):
     )
 
     scene.play(Write(eq_norm_proof[0]))
+    scene.wait()
     scene.play(TransformMatchingTex(eq_norm_proof[0], eq_norm_proof[1]))
+    scene.wait()
     scene.play(TransformMatchingTex(eq_norm_proof[1], eq_norm_proof[2]))
+    scene.wait()
 
     part_AtAvi = eq_norm_proof[2][4:7]
     scene.play(
@@ -277,4 +281,5 @@ def svd_proof(scene):
     final_svd_box = SurroundingRectangle(eq_final_svd, color=RED, buff=0.25)
 
     scene.play(Create(final_svd_box))
-    scene.wait()
+    scene.wait(2)
+    scene.clear()

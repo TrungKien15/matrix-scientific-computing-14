@@ -9,7 +9,7 @@ def step4(scene):
     scene.play(title.animate.to_edge(UP + LEFT))
 
     text1 = MathTex(r"""
-        P =
+        D =
         \begin{bmatrix}
         \lambda_1 & 0 & 0\\
         0 & \lambda_2 & 0\\
