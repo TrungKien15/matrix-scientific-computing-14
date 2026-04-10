@@ -7,7 +7,7 @@ def svd_application(scene):
     scene.play(Write(title))
     scene.play(title.animate.to_edge(UP))
 
-    image_name = "image.png"
+    image_name = "assets/image.png"
 
     try:
         img = Image.open(image_name).convert('RGB')
