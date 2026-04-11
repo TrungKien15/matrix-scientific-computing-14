@@ -1,4 +1,4 @@
-﻿from gaussian import gaussian_eliminate
+﻿from part1.gaussian import gaussian_eliminate
 
 def determinant(A):
     m = len(A)
