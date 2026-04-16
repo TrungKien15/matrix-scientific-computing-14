@@ -11,7 +11,6 @@ def svd_application(scene):
 
     try:
         img = Image.open(image_name).convert('RGB')
-        img.thumbnail((400, 400))
     except FileNotFoundError:
         img = Image.fromarray((np.random.rand(200, 200, 3) * 255).astype(np.uint8))
 
@@ -196,7 +195,6 @@ def svd_application(scene):
     
     try:
         img = Image.open(image_name).convert('RGB')
-        img.thumbnail((400, 400)) 
         A = np.array(img) / 255.0 
     except FileNotFoundError:
         x, y = np.meshgrid(np.linspace(0, 4 * np.pi, 200), np.linspace(0, 4 * np.pi, 200))
