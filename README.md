@@ -53,8 +53,9 @@ requirements.txt
 
 ## 4. Cài đặt
 
-Cài thư viện cần thiết:
+### Cài thư viện cần thiết:
 pip install -r requirements.txt
+
 ---
 
 ## 5. Cách chạy
@@ -76,6 +77,7 @@ jupyter notebook
 ## 6. Demo
 
 Video minh họa SVD:
+
 part2/SVD.mp4
 
 Được tạo bằng Manim để trực quan hóa quá trình phân rã SVD.
@@ -86,4 +88,5 @@ part2/SVD.mp4
 
 ### Compile bằng LaTeX:
 pdflatex report.tex
+
 --- 
