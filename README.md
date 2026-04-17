@@ -85,6 +85,5 @@ part2/SVD.mp4
 ## 7. Báo cáo
 
 ### Compile bằng LaTeX:
-
 pdflatex report.tex
 --- 
