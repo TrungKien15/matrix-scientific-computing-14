@@ -36,11 +36,17 @@ Mục tiêu chính:
 
 ## 3. Cấu trúc thư mục
 part1/ # Gaussian, Inverse, Determiant
+
 part2/ # SVD + Manim
+
 part3/ # Solver + Benchmark
+
 tests/ # Test bằng pytest
+
 Report/ # Báo cáo 
+
 README.md
+
 requirements.txt
 
 ---
@@ -79,5 +85,6 @@ part2/SVD.mp4
 ## 7. Báo cáo
 
 Compile bằng LaTeX:
+
 pdflatex report.tex
 -- 
