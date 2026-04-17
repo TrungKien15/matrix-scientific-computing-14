@@ -23,42 +23,61 @@ Mục tiêu chính:
 - Cài đặt SVD bằng:
   - Power Iteration
   - Deflation
-- Không dùng `numpy.linalg.svd`
+- Visualization bằng Manim
 
 ### Part 3 – Solver & Benchmark
 - Giải hệ bằng:
   - Gaussian
   - SVD
   - Gauss-Seidel
+- Benchmark so sánh hiệu năng
 
 ---
 
 ## 3. Cấu trúc thư mục
-
-part1/        # Thuật toán cơ bản  
-part2/        # SVD  
-part3/        # Solver + Benchmark  
-tests/        # Test bằng pytest  
-report       
-README.md  
-requirements.txt  
+part1/ # Gaussian, Inverse, Determiant
+part2/ # SVD + Manim
+part3/ # Solver + Benchmark
+tests/ # Test bằng pytest
+Report/ # Báo cáo 
+README.md
+requirements.txt
 
 ---
 
 ## 4. Cài đặt
 
 Cài thư viện cần thiết:
-
 pip install -r requirements.txt
-
 ---
 
 ## 5. Cách chạy
 
-Chạy test:
-
+### Chạy test
 python -m pytest
 
-Chạy benchmark:
 
+### Chạy benchmark
 python -m part3.benchmark
+
+
+### Chạy notebook (phân tích thực nghiệm)
+jupyter notebook
+
+
+---
+
+## 6. Demo
+
+Video minh họa SVD:
+part2/SVD.mp4
+
+Được tạo bằng Manim để trực quan hóa quá trình phân rã SVD.
+
+---
+
+## 7. Báo cáo
+
+Compile bằng LaTeX:
+pdflatex report.tex
+-- 
